@@ -4,17 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Forward {
-    private Rover rover;
 
-    public Forward(Rover rover) {
+    private final int positionX;
+    private final int positionY;
 
-        this.rover = rover;
+    public Forward(int positionX, int positionY) {
+
+        this.positionX = positionX;
+        this.positionY = positionY;
     }
 
     public List<Integer> straight() {
         ArrayList<Integer> position = new ArrayList<>();
-        position.add(2);
-        position.add(4);
+        position.add(positionX);
+        position.add(positionY + 1);
         return position;
     }
 }
