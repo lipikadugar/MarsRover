@@ -15,6 +15,8 @@ public class Left {
             direction = "N";
         else if (Objects.equals(direction, "S"))
             direction = "E";
+        else if (Objects.equals(direction, "W"))
+            direction = "S";
         return direction;
     }
 }
