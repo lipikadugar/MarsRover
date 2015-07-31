@@ -35,4 +35,11 @@ public class ForwardTest {
 
         assertEquals(Arrays.asList(3, 7), move.straight());
     }
+
+    @Test
+    public void shouldBe1And7IfRoverPositionIs2And7AndFacingSouthDirection() {
+        Forward move = new Forward(2, 7, "W");
+
+        assertEquals(Arrays.asList(1, 7), move.straight());
+    }
 }
