@@ -8,7 +8,11 @@ public class Right {
         this.direction = direction;
     }
 
-    public String right() {
-        return "E";
+    public String getDirection() {
+        if (direction == "N")
+            direction = "E";
+        else if (direction == "S")
+            direction = "W";
+        return direction;
     }
 }

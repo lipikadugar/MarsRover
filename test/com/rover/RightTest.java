@@ -10,6 +10,13 @@ public class RightTest {
     public void shouldBeFacingEastIfFacingNorthDirection() {
         Right move = new Right("N");
 
-        assertEquals("E", move.right());
+        assertEquals("E", move.getDirection());
+    }
+
+    @Test
+    public void shouldBeFacingWestIfFacingSouthDirection() {
+        Right move = new Right("S");
+
+        assertEquals("W", move.getDirection());
     }
 }

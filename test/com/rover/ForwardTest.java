@@ -12,34 +12,34 @@ public class ForwardTest {
     public void shouldYCoordinateIncreaseIfRoverIsFacingNorthDirection() {
         Forward move = new Forward(2, 3, "N");
 
-        assertEquals(Arrays.asList(2, 4), move.straight());
+        assertEquals(Arrays.asList(2, 4), move.getPosition());
     }
 
     @Test
     public void shouldBe3And7IfRoverPositionIs3And6AndFacingNorthDirection() {
         Forward move = new Forward(3, 6, "N");
 
-        assertEquals(Arrays.asList(3, 7), move.straight());
+        assertEquals(Arrays.asList(3, 7), move.getPosition());
     }
 
     @Test
     public void shouldBe2And5IfRoverPositionIs2And6AndFacingSouthDirection() {
         Forward move = new Forward(2, 6, "S");
 
-        assertEquals(Arrays.asList(2, 5), move.straight());
+        assertEquals(Arrays.asList(2, 5), move.getPosition());
     }
 
     @Test
     public void shouldBe3And7IfRoverPositionIs2And7AndFacingSouthDirection() {
         Forward move = new Forward(2, 7, "E");
 
-        assertEquals(Arrays.asList(3, 7), move.straight());
+        assertEquals(Arrays.asList(3, 7), move.getPosition());
     }
 
     @Test
     public void shouldBe1And7IfRoverPositionIs2And7AndFacingSouthDirection() {
         Forward move = new Forward(2, 7, "W");
 
-        assertEquals(Arrays.asList(1, 7), move.straight());
+        assertEquals(Arrays.asList(1, 7), move.getPosition());
     }
 }

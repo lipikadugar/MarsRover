@@ -17,7 +17,7 @@ public class Forward {
         this.direction = direction;
     }
 
-    public List<Integer> straight() {
+    public List<Integer> getPosition() {
         ArrayList<Integer> position = new ArrayList<>();
         if (Objects.equals(direction, "N"))
             positionY += 1 ;
