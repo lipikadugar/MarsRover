@@ -13,6 +13,7 @@
             <classpath location="lib/junit-4.11.jar" path="antBuild"/>
             <test name="com.rover.PlateauTest" haltonfailure="true" haltonerror="true"/>
             <test name="com.rover.ForwardTest" haltonfailure="true" haltonerror="true"/>
+            <test name="com.rover.RightTest" haltonfailure="true" haltonerror="true"/>
         </junit>
     </target>
 
