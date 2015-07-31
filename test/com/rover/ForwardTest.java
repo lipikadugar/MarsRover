@@ -23,9 +23,16 @@ public class ForwardTest {
     }
 
     @Test
-    public void shouldBe2And5IfRoverPositionIs2And7AndFacingSouthDirection() {
+    public void shouldBe2And5IfRoverPositionIs2And6AndFacingSouthDirection() {
         Forward move = new Forward(2, 6, "S");
 
         assertEquals(Arrays.asList(2, 5), move.straight());
+    }
+
+    @Test
+    public void shouldBe3And7IfRoverPositionIs2And7AndFacingSouthDirection() {
+        Forward move = new Forward(2, 7, "E");
+
+        assertEquals(Arrays.asList(3, 7), move.straight());
     }
 }

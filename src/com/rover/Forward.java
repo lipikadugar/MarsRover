@@ -23,6 +23,8 @@ public class Forward {
             positionY += 1 ;
         else if (Objects.equals(direction, "S"))
             positionY -= 1 ;
+        else if (Objects.equals(direction, "E"))
+            positionX += 1 ;
         position.add(positionX);
         position.add(positionY);
         return position;
