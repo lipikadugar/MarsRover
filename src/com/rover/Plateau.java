@@ -11,6 +11,7 @@ public class Plateau {
     }
 
     public boolean isValid(int positionX, int positionY) {
-        return positionX < upperRightXCoordinate && positionX > 0 && positionY < upperRightYCoordinate && positionY > 0;
+        return (positionX >= 0 && positionX <= upperRightXCoordinate) &&
+                (positionY >= 0 && positionY <= upperRightYCoordinate);
     }
 }

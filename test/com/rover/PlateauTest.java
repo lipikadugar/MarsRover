@@ -19,4 +19,11 @@ public class PlateauTest {
 
         assertEquals(false, plateau.isValid(6, 3));
     }
+
+    @Test
+    public void shouldCheckIfThePosition0and0IsWithinThePlateau() {
+        Plateau plateau = new Plateau(5, 7);
+
+        assertEquals(true, plateau.isValid(0, 0));
+    }
 }
