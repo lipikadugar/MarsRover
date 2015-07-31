@@ -19,4 +19,11 @@ public class RightTest {
 
         assertEquals("W", move.getDirection());
     }
+
+    @Test
+    public void shouldBeFacingNorthIfFacingWestDirection() {
+        Right move = new Right("W");
+
+        assertEquals("N", move.getDirection());
+    }
 }

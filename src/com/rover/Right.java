@@ -1,5 +1,7 @@
 package com.rover;
 
+import java.util.Objects;
+
 public class Right {
     private String direction;
 
@@ -9,10 +11,12 @@ public class Right {
     }
 
     public String getDirection() {
-        if (direction == "N")
+        if (Objects.equals(direction, "N"))
             direction = "E";
-        else if (direction == "S")
+        else if (Objects.equals(direction, "S"))
             direction = "W";
+        else if (Objects.equals(direction, "W"))
+            direction = "N";
         return direction;
     }
 }
