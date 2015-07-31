@@ -33,8 +33,8 @@ public class Forward implements Operations {
     }
 
     @Override
-    public void execute() {
-
+    public List<Integer> execute(int positionX, int positionY, String direction) {
+        return getPosition();
     }
 }
 

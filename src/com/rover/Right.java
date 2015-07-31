@@ -1,5 +1,6 @@
 package com.rover;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Right implements Operations {
@@ -23,7 +24,8 @@ public class Right implements Operations {
     }
 
     @Override
-    public void execute() {
+    public List<Integer> execute(int positionX, int positionY, String direction) {
 
+        return null;
     }
 }

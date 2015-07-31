@@ -14,6 +14,8 @@
             <test name="com.rover.PlateauTest" haltonfailure="true" haltonerror="true"/>
             <test name="com.rover.ForwardTest" haltonfailure="true" haltonerror="true"/>
             <test name="com.rover.RightTest" haltonfailure="true" haltonerror="true"/>
+            <test name="com.rover.LeftTest" haltonfailure="true" haltonerror="true"/>
+            <test name="com.rover.ParserTest" haltonfailure="true" haltonerror="true"/>
         </junit>
     </target>
 
