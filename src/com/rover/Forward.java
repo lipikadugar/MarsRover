@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Forward {
+public class Forward implements Operations {
 
     private int positionX;
     private int positionY;
@@ -30,6 +30,11 @@ public class Forward {
         position.add(positionX);
         position.add(positionY);
         return position;
+    }
+
+    @Override
+    public void execute() {
+
     }
 }
 

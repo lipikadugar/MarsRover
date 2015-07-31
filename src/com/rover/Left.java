@@ -2,7 +2,7 @@ package com.rover;
 
 import java.util.Objects;
 
-public class Left {
+public class Left implements Operations {
     private String direction;
 
     public Left(String direction) {
@@ -20,5 +20,10 @@ public class Left {
         else if (Objects.equals(direction, "N"))
             direction = "W";
         return direction;
+    }
+
+    @Override
+    public void execute() {
+
     }
 }
